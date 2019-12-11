@@ -693,7 +693,7 @@ public class Principal {
                             }
                         } while (vetor2[4] < 50);
                         do {
-                            prompt = String.format("> Informe o valor para %.1f gramas de Maneteiga: ", vetor2[4]);
+                            prompt = String.format("> Informe o valor para %.1f gramas de Manteiga: ", vetor2[4]);
                             atualiza_tela(titulo, subtitulo, texto, rodape, prompt, c, l, bs);
 
                             valor2[4] = validaNumeroDoub();// Método Valida NumDouble: Atribui ao 1º elemento do vetorVLR um valor informado.(valor > 0)
