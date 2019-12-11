@@ -260,11 +260,11 @@ public class Principal {
             nenhum = true;
         }
 
-        if (incompleto || nenhum) {
-            texto = "Os ingredientes informados até o momento não são suficientes "
-                    + "para analisar o custo de uma receita.\n\n"
-                    + "Informe todos os ingredientes de uma receita e acesse a essa função novamente.";
-        } else {
+        //if (incompleto || nenhum) {
+        //    texto = "Os ingredientes informados até o momento não são suficientes "
+        //            + "para analisar o custo de uma receita.\n\n"
+        //            + "Informe todos os ingredientes de uma receita e acesse a essa função novamente.";
+        //} else {
             texto = String.format("Rendimento  . . . . . . : %.0f unidades\n\n", rendimento)
                     + String.format("Preço de venda total. . : R$ %.2f\n", (preco_venda_unitario * rendimento))
                     + String.format("Custo total da receita. : R$ %.2f\n", (custo_unitario * rendimento))
@@ -275,7 +275,7 @@ public class Principal {
                     + String.format("Lucro por receita . . . : %.2f%%\n", lucro_percent);
 
             texto += alerta_custo_maximo();
-        }
+        //}
 
         atualiza_tela(titulo, subtitulo, texto, rodape, prompt, c, l, bs);
     }
